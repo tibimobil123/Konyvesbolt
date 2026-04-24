@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Könyvesbolt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="title">Könyvesbolt</div>
+    <a href="#" class="navbar-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a id="showLogin">Belépés/Regisztráció</a></li>
+      </ul>
+    </div>
+</nav>
+
+<div class="container">
+  <div class="content-box box">
+      <div class="content-box-body">
+        <h1>Könyvesbolt</h1><p id="status">Kijelentkezve</p><hr><br>
+        <input type="search" id="search" class="search" placeholder="Keresés">
+        <div id="results"></div>
+        <hr>
+        <h3>Vásárlásaim</h3>
+        <div id="mybooks"></div>
+      </div>
+  </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div id="overlayLogin" class="overlay">
+  <div class="modal">
+    <span id="closeLogin" style="position:absolute; top:10px; right:15px; font-size:20px; cursor:pointer;">&times;</span>
+    <h2>Bejelentkezés</h2>
+    <input type="email" id="modalEmail" placeholder="Email">
+    <input type="password" id="modalPassword" placeholder="Jelszó">
+    <button id="loginBtn">Belépés</button>
+    <button style="margin-top:10px;" id="showRegister">Regisztráció</button>
+  </div>
+</div>
+
+<!-- REGISTER MODAL -->
+<div id="overlayRegister" class="overlay">
+  <div class="modal">
+    <h2>Regisztráció</h2>
+    <input type="email" id="registerEmail" placeholder="Email">
+    <input type="password" id="registerPassword" placeholder="Jelszó">
+    <button id="registerBtn">Regisztráció</button>
+    <button style="margin-top:10px;" id="backToLogin">Vissza a belépéshez</button>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-inner">
+    <p class="bold">© 2026 Könyvesbolt | Minden jog fenntartva.</p>
+  </div>
+</div>
+</body>
+</html>
